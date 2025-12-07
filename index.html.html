@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muskan Shopping Center</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; }
+        header { background: #d81b60; color: #fff; padding: 25px; text-align: center; }
+        nav { background: #880e4f; padding: 12px; text-align: center; }
+        nav a { color: #fff; margin: 0 20px; text-decoration: none; font-weight: bold; }
+        .hero { height: 380px; background: url('https://via.placeholder.com/1400x450') center/cover no-repeat; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; text-shadow: 0px 2px 5px black; }
+        .section { padding: 50px; text-align: center; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 20px; }
+        .product-card { background: #fff; padding: 15px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; border-radius: 10px; }
+        .product-card button { margin-top: 10px; padding: 10px 15px; background: #d81b60; color: #fff; border: none; cursor: pointer; border-radius: 8px; font-weight: bold; }
+        .product-card button:hover { background: #880e4f; }
+        footer { background: #d81b60; color: #fff; padding: 25px; text-align: center; margin-top: 40px; }
+        .slideshow { width: 100%; height: 350px; overflow: hidden; }
+        .slide-img { width: 100%; height: 100%; object-fit: cover; }
+        .contact-box { background: #fff; padding: 25px; width: 70%; margin: auto; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: 1px solid #ccc; }
+        button.send { background: #880e4f; color: #fff; border: none; padding: 12px; width: 150px; margin-top: 15px; border-radius: 8px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muskan Shopping Center</h1>
+        <p>Your Fashion • Your Style • Your Store</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">Trendy • Stylish • Affordable Fashion</div>
+
+    <section class="section" id="categories">
+        <h2>Product Categories</h2>
+        <p>We offer a wide range of clothing for all age groups</p>
+        <ul style="list-style:none; font-size:20px; line-height:35px;">
+            <li>✔ Sarees</li>
+            <li>✔ Kurtis</li>
+            <li>✔ Men's T-Shirts & Jeans</li>
+            <li>✔ Women Tops & Western Wear</li>
+            <li>✔ Kids Clothing</li>
+            <li>✔ Winter Collection</li>
+            <li>✔ Nightwear & Innerwear</li>
+        </ul>
+    </section>
+
+    <section class="section" id="products">
+        <h2>Latest Arrivals</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x350" />
+                <h3>Designer Saree</h3>
+                <p>Price: ₹1299</p>
+                <button>Order on WhatsApp</button><script>document.querySelectorAll('.product-card button').forEach(btn=>{btn.onclick=()=>{window.location.href='https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20order%20this%20product.';};});</script></button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x350" />
+                <h3>Men's Printed Shirt</h3>
+                <p>Price: ₹799</p>
+                <button>Order on WhatsApp</button><script>document.querySelectorAll('.product-card button').forEach(btn=>{btn.onclick=()=>{window.location.href='https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20order%20this%20product.';};});</script></button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x350" />
+                <h3>Kids Frock</h3>
+                <p>Price: ₹499</p>
+                <button>Order on WhatsApp</button><script>document.querySelectorAll('.product-card button').forEach(btn=>{btn.onclick=()=>{window.location.href='https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20order%20this%20product.';};});</script></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About Us</h2>
+        <p>Muskan Shopping Center offers premium quality fashion at affordable prices. We have been serving our customers with trust, quality, and the latest trends.</p>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Scan & Pay</h2>
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+" style="width:300px; border-radius:15px; margin-bottom:30px;" />
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <p><b>📍 Address:</b> Muskan Shopping Center, India</p>
+            <p><b>📞 Phone:</b> +91 9876543210</p>
+            <p><b>📧 Email:</b> info@muskanshoppingcenter.com</p>
+            <p><b>📱 WhatsApp:</b> Order directly through WhatsApp!</p>
+            <br>
+            <h3>Send us a message</h3>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <button class="send">Send</button>
+        </div>
+            <div style="margin-top:30px;">
+            <a href="https://wa.me/918383861137?text=Hi%2C%20I%20want%20to%20order%20products" 
+               style="background:#25D366; color:white; padding:12px 25px; border-radius:8px; text-decoration:none; font-weight:bold; margin-right:15px;">
+               💬 Order on WhatsApp
+            </a>
+            <a href="upi://pay?pa=8383861137@ptyes&pn=Sushil%20Kumar&cu=INR" 
+               style="background:#007bff; color:white; padding:12px 25px; border-radius:8px; text-decoration:none; font-weight:bold;">
+               💳 Pay Now
+            </a>
+        </div>
+    </section>
+    <footer>
+        © 2025 Muskan Shopping Center | All Rights Reserved
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918383861137?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20products" 
+       style="position: fixed; bottom: 20px; right: 20px; background:#25D366; color:white; padding:15px 20px; border-radius:50%; box-shadow:0 4px 10px rgba(0,0,0,0.3); text-decoration:none; font-size:24px; font-weight:bold;"
+       target="_blank">💬</a>
+</body>
+</html>
